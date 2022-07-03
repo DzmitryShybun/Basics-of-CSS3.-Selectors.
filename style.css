@@ -40,15 +40,9 @@
     background-color: lightblue;
 }
 
-/*Селекторы дочерних элементов*/
- .article > p{
-     color:red;
-           }
-
-
 /*Стилизация группы селекторов*/
- h1,h2,h3{
-     color: red;
+  #group_selectors h2,h3,h1{
+     color: blue;
  }
 
  /*Селекторы потомков*/
@@ -62,4 +56,14 @@
 /*Пример со списком*/
 li .redlink{
     color: red;
+}
+
+ /*Селекторы дочерних элементов*/
+ .article > p{
+     color:red;
+ }
+
+ /*Селекторы элементов одного уровня*/
+h2+div{
+    color: greenyellow;
 }
