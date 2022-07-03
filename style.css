@@ -45,3 +45,16 @@
  h1,h2,h3{
      color: red;
  }
+
+ /*Селекторы потомков*/
+#main p{
+    font-size: 18px;
+}
+#footer2 p{
+    font-size: 13px;
+}
+
+/*Пример со списком*/
+li .redlink{
+    color: red;
+}
