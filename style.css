@@ -40,6 +40,11 @@
     background-color: lightblue;
 }
 
+/*Селекторы дочерних элементов*/
+ .article > p{
+     color:red;
+           }
+
 
 /*Стилизация группы селекторов*/
  h1,h2,h3{
