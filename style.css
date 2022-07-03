@@ -67,3 +67,18 @@ li .redlink{
 h2+div{
     color: greenyellow;
 }
+ /*h2~div{*/
+ /*    color: greenyellow;*/
+ /*}*/
+
+/*Псевдоклассы*/
+ .psevdo a:link: {color: darkgoldenrod; text-decoration: none}
+ .psevdo a:visited {color: green; text-decoration: none}
+ .psevdo a:hover {color: red; text-decoration: underline}
+ .psevdo a:active {color: yellow; text-decoration: underline}
+    input:hover {border: 2px solid red; border-radius: 7px;}
+/*Селектор :not*/
+ .selector_not a:not(.bluelink) { color:red; }
+
+ /*Псевдокласс :lang*/
+ .psevdo_lang :lang(ru){ color: green}
