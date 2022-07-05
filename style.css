@@ -76,7 +76,7 @@ h2+div{
  .psevdo a:visited {color: green; text-decoration: none}
  .psevdo a:hover {color: red; text-decoration: underline}
  .psevdo a:active {color: yellow; text-decoration: underline}
-    input:hover {border: 2px solid red; border-radius: 7px;}
+    .psevdo input:hover {border: 2px solid red; border-radius: 7px;}
 /*Селектор :not*/
  .selector_not a:not(.bluelink) { color:red; }
 
@@ -105,7 +105,7 @@ h2+div{
  .only-of-type {
      border: 1px solid #222222;
  }
-span:only-of-type {
+.only-of-type span:only-of-type {
     color: green;
 }
 p:only-of-type {
@@ -119,3 +119,53 @@ div:only-of-type{
  tr:nth-child(odd) { background-color: #bbb; }
  tr:nth-child(even) { background-color: #fff; }
  tr:nth-child(3n+2) {background-color: darkblue}
+
+ /*Псевдоклассы enabled и disabled*/
+ .enabled_disabled :enabled
+ {
+     border: 2px black solid;
+ }
+
+ /*Псевдокласс checked*/
+.checked :checked + span
+    {
+        color: red;
+        font-weight: bold;
+    }
+
+ /*Псевдокласс default*/
+.default :default
+    {
+        border: 2px solid red;
+        border-radius: 10px;
+    }
+
+ /*Псевдоклассы valid и invalid*/
+ .valid_invalid input:invalid
+     {
+        border: 2px solid red;
+     }
+ .valid_invalid input:valid
+     {
+        border: 2px solid green;
+     }
+
+ /*Псевдоклассы in-range и out-of-range*/
+ .in-range_out-of-range :in-range
+ {
+     border: 2px solid green;
+ }
+ .in-range_out-of-range :out-of-range
+ {
+     border: 2px solid red;
+ }
+
+ /*Псевдоклассы required и optional*/
+ .required_optional :optional
+ {
+    border: 2px solid blue;
+ }
+ .required_optional :required
+ {
+     border: 2px solid red;
+ }
