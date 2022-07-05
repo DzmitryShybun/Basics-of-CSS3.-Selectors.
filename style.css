@@ -97,7 +97,7 @@ h2+div{
  }
 
  /*Селектор only-child*/
- p:only-child{
+ .only-child p :only-child{
      color:red;
  }
 
@@ -108,10 +108,10 @@ h2+div{
 .only-of-type span:only-of-type {
     color: green;
 }
-p:only-of-type {
+ .only-of-type p:only-of-type {
     color: red;
 }
-div:only-of-type{
+ .only-of-type div:only-of-type{
     color: blue;
 }
 
@@ -169,3 +169,17 @@ div:only-of-type{
  {
      border: 2px solid red;
  }
+
+ /*Псевдоэлементы*/
+ /*Стилизуем текст, используя псевдоэлементы first-letter и first-line:*/
+.psevdo_el ::first-letter {color: red; font-size: 25px;}
+.psevdo_el  ::first-line { font-size: 20px;}
+ /*Используем псевдоэлементы before и after:*/
+.warning::before {content: "Важно! "; font-weight: bold;}
+.warning::after {content: " Будьте осторожны!"; font-weight: bold; }
+ /*Используем псевдоэлемент selection для стилизации выбранных элементов*/
+.selection ::selection
+{
+    color: yellow;
+    background-color: red;
+}
