@@ -36,9 +36,9 @@
 }
 
 /*Универсальный селектор*/
-*{
-    background-color: lightblue;
-}
+/**{*/
+/*    background-color: lightblue;*/
+/*}*/
 
 /*Стилизация группы селекторов*/
   #group_selectors h2,h3,h1{
@@ -72,7 +72,7 @@ h2+div{
  /*}*/
 
 /*Псевдоклассы*/
- .psevdo a:link: {color: darkgoldenrod; text-decoration: none}
+ .psevdo a:link {color: darkgoldenrod; text-decoration: none}
  .psevdo a:visited {color: green; text-decoration: none}
  .psevdo a:hover {color: red; text-decoration: underline}
  .psevdo a:active {color: yellow; text-decoration: underline}
@@ -82,3 +82,40 @@ h2+div{
 
  /*Псевдокласс :lang*/
  .psevdo_lang :lang(ru){ color: green}
+
+ /*Псевдокласс first-child*/
+ .first-child {
+     border: 1px solid;
+ }
+ .first-child2 a:first-child {
+     color: darkgoldenrod;
+ }
+
+ /*Псевдокласс last-child*/
+ .last-child a:last-child{
+     color: darkorange;
+ }
+
+ /*Селектор only-child*/
+ p:only-child{
+     color:red;
+ }
+
+ /*Псевдокласс only-of-type*/
+ .only-of-type {
+     border: 1px solid #222222;
+ }
+span:only-of-type {
+    color: green;
+}
+p:only-of-type {
+    color: red;
+}
+div:only-of-type{
+    color: blue;
+}
+
+ /*Псевдокласс nth-child*/
+ tr:nth-child(odd) { background-color: #bbb; }
+ tr:nth-child(even) { background-color: #fff; }
+ tr:nth-child(3n+2) {background-color: darkblue}
