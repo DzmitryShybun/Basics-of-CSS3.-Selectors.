@@ -194,3 +194,7 @@ h2+div{
     {
         color: darkred;
     }
+
+ /*Наследование стилей*/
+.Style_Inheritance {color: red;}
+ .Style_Inheritance div {color: black;}
