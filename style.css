@@ -206,3 +206,7 @@ h2+div{
  .Style_Cascading .nav .menuItem {color: green;}
  .Style_Cascading a .menuItem:not(.newsLinks) {color: orange;}
  .Style_Cascading div ul li a {color: gray;}
+
+ /*Псевдоклассы :is() и :where()*/
+ .is :is(header, main, footer) > p {font-size:18px; font-family: verdana;}
+ .is_is :is(:is(header, main, footer) div) > p {font-size: 18px; font-family: Verdana;}
