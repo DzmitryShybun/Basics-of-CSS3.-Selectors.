@@ -198,3 +198,11 @@ h2+div{
  /*Наследование стилей*/
 .Style_Inheritance {color: red;}
  .Style_Inheritance div {color: black;}
+
+ /*Каскадность стилей*/
+ .Style_Cascading a {font-size: 18px;}
+ .Style_Cascading .nav li a {color: red;}
+ .Style_Cascading #menu a {color: navy;}
+ .Style_Cascading .nav .menuItem {color: green;}
+ .Style_Cascading a .menuItem:not(.newsLinks) {color: orange;}
+ .Style_Cascading div ul li a {color: gray;}
